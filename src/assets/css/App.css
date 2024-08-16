@@ -1,15 +1,36 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+
+height: auto;
+width: 100vw;
   text-align: center;
 }
-
+.logos{
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .logo {
-  height: 6em;
+
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
+}
+.navbar{
+  height: 80px;
+  width: 100vw;
+  background-color: #00081771;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 30px;
+  z-index: 2;
+}
+
+.logo2{
+  width: 80px;
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
@@ -17,7 +38,365 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
+.listaNav {
 
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  width: 33%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  padding: 0%;
+  margin: 0%;
+ }
+
+ .listaNav li{
+  margin: 0px 15px;
+  font-size:16px ;
+  position: relative; /* Asegura que la pseudo-clase :after se posicione correctamente */
+}
+
+.listaNav li::after {
+  content: ''; 
+  position: absolute;
+  left: 0; 
+  bottom: 0; 
+  width: 0; 
+  height: 1px; 
+  background-color: white; 
+  transition: width 0.3s ease; 
+}
+
+.listaNav li:hover::after {
+  width: 100%; 
+}
+.derecha{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+width: 33%;
+}
+
+
+.serchBar{
+  height: 38px;
+  width: 239px;
+  background-color: #F5F5F5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 8px;
+  padding-left: 5px;
+}
+
+.serchBar input, .serchBar button{
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  padding: 0;
+}
+.material-icons{
+  color: grey;
+}
+
+
+.menu-btn{
+  display: none;
+}
+.dropdown-menu {
+  
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1000;
+}
+
+
+
+
+/* hero */
+.hero {
+  width: 100vw;
+  height: 80vh;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  background-image: url('../img/group15.jpg');
+  background-size: cover; /* Cubre todo el área del div */
+  background-position: bottom center; /* Asegura que la parte inferior de la imagen esté en el fondo del div */
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heroCentro{
+position: absolute;
+top: 270px;
+width: 100%;
+display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logoPrincipal{
+  position: relative;
+  bottom: -30px;
+}
+.serchBarPr{
+  width: 50vw;
+  max-width: 650px;
+  height: 50px;
+  background-color:#EBCE28 ;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.serchBarPr input{
+  width: 90%;
+  height: 100%;
+  margin: 0;
+  padding-left: 20px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.serchBarPr input:focus{
+  border: none;
+  outline: none;
+}
+.serchBarPr button{
+  background-color: transparent;
+  border: none;
+}
+.serchBarPr span{
+  width: 20px;
+  color: rgb(26, 25, 25);
+}
+.degre{
+  width: 100%;
+  height: 300px;
+  background: rgb(0,8,23);
+  background: linear-gradient(0deg, rgba(0,8,23,1) 0%, rgba(0,43,125,0) 100%);
+position: absolute;
+top: 283px;
+
+
+}
+
+
+
+/* categorias */
+
+.reco{
+ color: #EBCE28;
+ width: 200px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 0;
+ margin: 0;
+}
+.dot{
+  width: 20px;
+  height: 20px;
+  background-color: #EBCE28;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.cate{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+   
+}
+.reco2{
+
+}
+.cate2{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: start;
+  justify-content: center;
+
+}
+
+.cate2 ul{
+  font-family: "DM Sans", sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  list-style-type: none;
+  padding: 0%;
+  margin-top: 20px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+    -ms-overflow-style: none;
+
+}
+.cate2 ul::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.cate2 ul li{
+  margin-right: 30px;
+
+  width: auto;
+  white-space: nowrap;
+}
+.cate2 ul li button{ 
+background-color: transparent;
+border: none;
+padding: 10px 15px ;
+border-radius: 16px;
+}
+.reco2 h3{
+  margin: 0;
+  padding: 0;
+}
+
+
+.categoria-item button {
+
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  transition: all 0.5s;
+}
+
+.categoria-item button:hover {
+  background-color: #1d9dcf3d;
+}
+
+.categoria-item button.active {
+  background-color: #1D9DCF; /* Azul */
+  color: white;
+}
+
+
+
+
+
+
+/* cards  */
+.cards{
+  margin: 80px 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin: auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.2em;
+  margin: 0 0 10px 0;
+}
+
+.card-category {
+  color: #888;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.card-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating-score {
+  font-weight: bold;
+  color: #ffbf00;
+}
+
+.reviews {
+  font-size: 0.9em;
+  color: #555;
+}
+/* footer */
+.footer{
+width: 100vw;
+height: 400px;
+display: flex;
+ background: linear-gradient(to bottom, black, transparent);
+}
+
+.amarillo{
+  width: 50%;
+  background-color: #ffbf00;
+}
+.mitad{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.azul{
+  background-color: #0948B7;
+  width: 100%;
+  height: 50%;
+}
+.abajo{
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+.blanco{
+  height: 100%;
+  width: 50%;
+  background-color: whitesmoke;
+}
+.negro{
+  height: 100%;
+  width: 50%;
+  background-color: black;
+}
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -39,4 +418,23 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* Estilos para pantallas menores a 700px */
+@media (max-width: 1100px) {
+  .listaNav {
+      display: none; /* Esconde la barra de navegación principal */
+  }
+
+  .derecha {
+      display: none; /* Esconde los elementos de la derecha */
+  }
+
+  .menu-btn {
+      display: block; /* Muestra el botón de menú desplegable */
+  }
+
+  .dropdown-menu {
+      display: flex; /* Muestra el menú desplegable cuando está abierto */
+  }
 }
