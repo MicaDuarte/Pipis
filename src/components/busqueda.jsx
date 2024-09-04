@@ -1,5 +1,5 @@
 
-import pipisLogo from 'C:/Users/SUDA-Delfi/OneDrive/Escritorio/Pipis/pipis/src/assets/img/pipis1.png';
+import pipisLogo from 'C:/Users/SUDA-Delfi/OneDrive/Escritorio/Pipis/pipisReact/src/assets/img/pipis1.png';
 
  const Busqueda = () => {
     return <div className='heroCentro'>

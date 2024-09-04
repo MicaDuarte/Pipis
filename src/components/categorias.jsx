@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Reco from './reco.jsx';
+import Reco from './Reco.jsx';
 
 const categoriasData = [
     "Todos",

@@ -3,8 +3,8 @@ import BusquedaNavbar from './BusquedaNavbar';
 import MeGustas from './MeGustas';
 import Carrito from './Carrito';
 import Nav from './nav';
-import logo1 from 'C:/Users/SUDA-Delfi/OneDrive/Escritorio/Pipis/pipis/src/assets/img/logo1.png';
-import pipisLogo from 'C:/Users/SUDA-Delfi/OneDrive/Escritorio/Pipis/pipis/src/assets/img/pipis.png';
+import logo1 from 'C:/Users/SUDA-Delfi/OneDrive/Escritorio/Pipis/pipisreact/src/assets/img/logo1.png';
+import pipisLogo from 'C:/Users/SUDA-Delfi/OneDrive/Escritorio/Pipis/pipisreact/src/assets/img/pipis.png';
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);

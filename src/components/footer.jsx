@@ -1,8 +1,8 @@
-import logo1 from 'C:/Users/SUDA-Delfi/OneDrive/Escritorio/Pipis/pipis/src/assets/img/logo1.png';
-import pipisLogo from 'C:/Users/SUDA-Delfi/OneDrive/Escritorio/Pipis/pipis/src/assets/img/pipis.png';
-import panchi from 'C:/Users/SUDA-Delfi/OneDrive/Escritorio/Pipis/pipis/src/assets/img/panchi.png';
-import yo from 'C:/Users/SUDA-Delfi/OneDrive/Escritorio/Pipis/pipis/src/assets/img/yo.png';
-import Nav from './nav';
+import logo1 from 'C:/Users/SUDA-Delfi/OneDrive/Escritorio/Pipis/pipisReact/src/assets/img/logo1.png';
+import pipisLogo from 'C:/Users/SUDA-Delfi/OneDrive/Escritorio/Pipis/pipisReact/src/assets/img/pipis.png';
+import panchi from 'C:/Users/SUDA-Delfi/OneDrive/Escritorio/Pipis/pipisReact/src/assets/img/panchi.png';
+import yo from 'C:/Users/SUDA-Delfi/OneDrive/Escritorio/Pipis/pipisReact/src/assets/img/yo.png';
+import Nav from './nav.jsx';
 
 
 const footer = () => {

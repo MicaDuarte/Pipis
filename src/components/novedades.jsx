@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import productsData from './productsData';
-import Reco from './reco.jsx';
+import productsData from './productsData.jsx';
+import Reco from './Reco.jsx';
 
 const Novedades = () => {
   const productosNovedad = productsData.filter(producto => producto.novedad === "si");

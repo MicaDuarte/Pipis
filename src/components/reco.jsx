@@ -1,6 +1,6 @@
 
 import React from 'react';
-import '../assets/css/App.css'; // Si tienes estilos específicos para este componente
+import '../Styles/App.css'; // Si tienes estilos específicos para este componente
 
 
 
